@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+  </head>
+  <body>
+    <h1>User List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .}}
+        <tr>
+          <td>{{.Id}}</td>
+          <td>{{.CustomerName}}</td>
+          <td>{{.CustomerEmail}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </body>
+</html>
